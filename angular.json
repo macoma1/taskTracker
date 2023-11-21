@@ -89,6 +89,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -96,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "d3c3ca0f-a03b-4fb4-b119-26c234251395"
   }
 }

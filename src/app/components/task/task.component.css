@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+  section {
+    max-width: 80%;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+  
+  input, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+
+  
+  button {
+    background-color: #5CDB95;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #05386B;
+  }
+  
+  .task {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .urgency-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .low-urgency .urgency-indicator {
+    background-color: darkgreen;
+  }
+  
+  .medium-urgency .urgency-indicator {
+    background-color: yellow;
+  }
+  
+  .high-urgency .urgency-indicator {
+    background-color: red;
+  }
+  
+  p {
+    margin: 0;
+    padding-left: 10px;
+    flex-grow: 1;
+    color: black;
+  }
+  
+  label {
+    margin-left: 10px;
+  }
+  

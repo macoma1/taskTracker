@@ -1,0 +1,32 @@
+<section>
+    <h1>Task Tracker</h1>
+    <input [(ngModel)]="newTask" placeholder="New task">
+    <div>
+        <input type="radio" id="low" [(ngModel)]="newTaskUrgency" value="low">
+        <label for="low">Low</label>
+    </div>
+    <div>
+        <input type="radio" id="medium" [(ngModel)]="newTaskUrgency" value="medium">
+        <label for="medium">Medium</label>
+    </div>
+    <div>
+        <input type="radio" id="high" [(ngModel)]="newTaskUrgency" value="high">
+        <label for="high">High</label>
+    </div>
+
+    <button (click)="addTask()">Add Task</button>
+    <h2> Your tasks</h2>
+    @for (task of tasks; track task.id){
+    @if (!task.completed){
+    <div class="task d-flex align-items-center"
+        [ngClass]="{'low-urgency': task.urgency === 'low', 'medium-urgency': task.urgency === 'medium', 'high-urgency': task.urgency === 'high'}">
+        <div class="urgency-indicator mr-3"></div>
+        <p>{{ task.title }}</p>
+        <button (click)="completeTask(task)">Complete Task</button>
+    </div>
+    }
+    }
+    @if (tasks.length === 0) {
+    <p>Congratulations, you have completed all tasks!</p>
+    }
+</section>
