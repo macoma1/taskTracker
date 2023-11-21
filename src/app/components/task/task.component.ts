@@ -20,7 +20,10 @@ export class TaskComponent implements OnInit, OnDestroy {
   tasks: Array<{ id: number, title: string, completed: boolean, urgency: 'low' | 'medium' | 'high' }> = [
     { id: 1, title: 'Clean the kitchen', completed: false, urgency: 'low' },
     { id: 2, title: 'Clean the bathroom', completed: false, urgency: 'medium' },
-    { id: 3, title: 'Clean the living room', completed: false, urgency: 'high' }
+    { id: 3, title: 'Clean the living room', completed: false, urgency: 'high' },
+    { id: 4, title: 'Do the laundry', completed: false, urgency: 'low' },
+    { id: 5, title: 'Buy groceries', completed: false, urgency: 'medium' },
+    { id: 6, title: 'Prepare dinner', completed: false, urgency: 'high' }
   ];
   private subscription!: Subscription;
   constructor(private themeService: ThemeService) { }
